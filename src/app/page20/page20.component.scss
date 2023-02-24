@@ -1,0 +1,116 @@
+@import '../../scss/base/mixins';
+
+.main {
+    @include d-flex(center, center);
+    @include width-height-boxshadow(100%, 100vh, none);
+
+    .body {
+        @include width-height-boxshadow(27em,23em, (rgba(100, 100, 111, 0.2) 0px 7px 29px 0px));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+
+        // background-color: grey;
+        .over {
+            @include width-height-boxshadow(25em, 20em, none);
+
+            // background-color: yellow;
+           
+            .overlap {
+                @include flex-v-center;
+                flex-direction: column;
+                // background-color: grey;
+                gap: 1.1em;
+
+                // justify-content: center;
+                .icon {
+                    img {
+                        @include width-height-boxshadow(14em, auto, none);
+                        display: flex;
+                        position: relative;
+                           top: 1em;
+                        // dis
+                    }
+                }
+
+                .text {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: .8em;
+
+                    .boldtext {
+                        font-size: 1.3em;
+                        font-weight: 600;
+                        color: #10182F;
+                    }
+
+                    .thintext {
+                        font-size: .9em;
+                        color: #A7A7A7;
+                        text-align: center
+                    }
+                }
+
+                .icontext {
+                    @include flex-v-center;
+                    flex-direction: column;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+
+                    // justify-content: center;
+                    .icon {
+                        img {
+                            @include width-height-boxshadow(3em, auto, none);
+                        }
+                    }
+
+                    .boldtext {
+                        font-size: 1em;
+                        font-weight: 800;
+                        color: #080031;
+                    }
+
+                    .thintext {
+                        color: #080031;
+                        font-size: .86em;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+                    gap: 1em;
+                    position: relative;
+                      top: .6em;
+                    .unsubmit {
+                        @include width-height-borderwidth-backgroundcolor-fontsize-color(8.7em, 3em, 0.1em, none, .9em, #FF992E);
+                        // padding: .3em;
+                        border-radius: .4em;
+                        background-color: white;
+                        border: 1.6px solid#FF992E;
+                        font-weight: 600;
+
+                    }
+
+                    .submit {
+                        @include width-height-borderwidth-backgroundcolor-fontsize-color(8.7em, 3em, .01em, #00B197, .9em, white);
+                        border-radius: .4em;
+                        border: 1.6px solid #00B197;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+// img{
+//     width: 100px;
+//     height:100px;
+// }
