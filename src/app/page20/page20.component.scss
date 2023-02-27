@@ -5,16 +5,15 @@
     @include width-height-boxshadow(100%, 100vh, none);
 
     .body {
-        @include width-height-boxshadow(27em,23em, (rgba(100, 100, 111, 0.2) 0px 7px 29px 0px));
+        @include width-height-boxshadow(40em,34.2em, (rgba(100, 100, 111, 0.2) 0px 7px 29px 0px));
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         font-family: 'Roboto', sans-serif;
-
         // background-color: grey;
         .over {
-            @include width-height-boxshadow(25em, 20em, none);
+            @include width-height-boxshadow(35em, 26em, none);
 
             // background-color: yellow;
            
@@ -22,15 +21,16 @@
                 @include flex-v-center;
                 flex-direction: column;
                 // background-color: grey;
-                gap: 1.1em;
+                // gap: .2em;
 
                 // justify-content: center;
                 .icon {
                     img {
-                        @include width-height-boxshadow(14em, auto, none);
-                        display: flex;
+                        @include width-height-boxshadow(20em, auto, none);
+                        // display: flex;
+                        // margin-top: 4em;
                         position: relative;
-                           top: 1em;
+                           bottom: .3em;
                         // dis
                     }
                 }
@@ -40,16 +40,16 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: .8em;
+                    gap: 1.4em;
 
                     .boldtext {
-                        font-size: 1.3em;
+                        font-size: 1.98em;
                         font-weight: 600;
                         color: #10182F;
                     }
 
                     .thintext {
-                        font-size: .9em;
+                        font-size: 1.4em;
                         color: #A7A7A7;
                         text-align: center
                     }
@@ -82,11 +82,11 @@
 
                 .buttons {
                     display: flex;
-                    gap: 1em;
+                    gap: 1.7em;
                     position: relative;
-                      top: .6em;
+                      top: 2.3em;
                     .unsubmit {
-                        @include width-height-borderwidth-backgroundcolor-fontsize-color(8.7em, 3em, 0.1em, none, .9em, #FF992E);
+                        @include width-height-borderwidth-backgroundcolor-fontsize-color(10em, 3.2em, 0.1em, none, 1.2em, #FF992E);
                         // padding: .3em;
                         border-radius: .4em;
                         background-color: white;
@@ -96,7 +96,7 @@
                     }
 
                     .submit {
-                        @include width-height-borderwidth-backgroundcolor-fontsize-color(8.7em, 3em, .01em, #00B197, .9em, white);
+                        @include width-height-borderwidth-backgroundcolor-fontsize-color(10em, 3.2em, .01em, #00B197, 1.2em, white);
                         border-radius: .4em;
                         border: 1.6px solid #00B197;
                     }

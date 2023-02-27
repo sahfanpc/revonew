@@ -1,217 +1,326 @@
-.main{
-    font-family:  'Roboto', sans-serif;
+.main {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    .container{
-        width: 77.8rem;
-        height: 61rem;
-        // background-color: green;
+
+    .container {
+        width: 74rem;
+        height: 58rem;
+        // background-color: green; 
         border: 0.2em solid #EBEBEB;
-        .head-part{
+
+        .head-part {
             height: 4.4rem;
-            width: 77.8rem;
+            width: 74rem;
             align-items: center;
-       display: flex;
-       justify-content: space-between;
-    //    background-color: yellow;
-       font-size: 1.54rem;
-       font-weight: 500;
-       color: #000000;
-       border-bottom: 0.2em solid #EBEBEB;
-       p{
-        padding-left: 1.15rem;
-       }
-       span{
-        font-size: 1.25rem;
-        color: #515151;
-       }
-       .close-icon{
-        position: relative;
-        right:1.2rem;
-        background-color: #F6F6F6;
-        color: #A7A7A7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.26em;
-        border-radius: 0.2em;
-.material-icons-round {
-font-size: 1.8rem;
-transform: rotate(0deg);
-transition: 0.4s;
-}
-       
-        :hover.material-icons-round{
-            transition: 0.4s;
-            transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
+            display: flex;
+            justify-content: space-between;
+            //    background-color: yellow; 
+            // position: relative;
+            // left: -1rem;
+            font-size: 1.54rem;
+            font-weight: 500;
+            color: #000000;
+            border-bottom: 0.1em solid #EBEBEB;
+
+            .text {
+                padding-left: 1.15rem;
+                //  background-color: black; 
+            }
+
+            span {
+                font-size: 1.25rem;
+                color: #515151;
+            }
+
+            .close-icon {
+                // background-color: black; 
+                position: relative;
+                right: 1.2rem;
+                background-color: #F6F6F6;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.26em;
+                border-radius: 0.2em;
+
+                .material-icons-round {
+                    color: #A7A7A7;
+                    font-size: 1.8rem;
+                    transform: rotate(0deg);
+                    transition: 0.4s;
+                }
+
+                :hover.material-icons-round {
+                    transition: 0.4s;
+                    transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                }
+
+            }
         }
-                   
-       }
-        }
-        .body-part{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // width: 75.8rem;
-        height: 56.6rem;
-       
-        .overall {
-                width: 75.2rem;
-                height: 53.4rem;
+
+        .body-part {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // width: 75.8rem; 
+            height: 53.6rem;
+
+            .overall {
+                width: 71.4rem;
+                height: 50.4rem;
                 border: 0.2em solid #EBEBEB;
-                // background-color: blue;
+                // background-color: blue; 
                 justify-content: center;
                 align-items: center;
                 border-radius: .5rem;
-               .headding{
-                background-color: #EBEBEB;
-                width: 75.2rem;
-                height: 4.5rem;
-                // background-color: yellow;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .left{
-                    position: relative;
-                    left: 1.3em;
-                    font-weight: 600;
-                    font-size:1.5rem ;
-                    color: #000000;
-                }
-                .right{
-                position: relative;
-                    right: 2em;
-                    font-size:1.2rem ;
-                    color: #667677;
-                }
-               }
-               .sections{
-                // background-color: greenyellow;
-                width: 75.2rem;
-                height: 40.6rem;
-                overflow-x:hidden;
-                overflow-y: auto;
-    
-                // height: 48.9rem;
-               .section1{
-                width: 75.2rem;
-                height: 25.8rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-               .companydetails-body{
-                width: 72.5rem;
-                height: 23.1rem;
-                // background-color: rosybrown;
-                border-bottom: .2rem solid #EBEBEB;
-                .companyaddress{
+
+                .headding {
+                    background-color: #EBEBEB;
+                    width: 71.4rem;
+                    height: 4.5rem;
+                    // background-color: yellow; 
                     display: flex;
+                    justify-content: space-between;
                     align-items: center;
-                    width: 72.5rem;
-                    height: 3rem;
-                    // background-color: aqua;
-                    font-size: 1.5rem;
-                    p{
+                    border-radius: .4rem;
+
+                    .left {
+
                         position: relative;
-                        left: .8rem;
+                        left: 1.3em;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        color: #000000;
+                    }
+
+                    .right {
+                        position: relative;
+                        right: 2em;
+                        font-size: 1.2rem;
+                        color: #667677;
                     }
                 }
-                .input{
-                    width: 72.5rem;
-                    height: 20.1rem;
-                    display: flex;
-                    
-                    ::placeholder {
-                            color: #A7A7A7;
-                    }
-                    .input-firstsection{
-                            
-                   width: 50%;
-                   display: flex;
-                   flex-direction: column;
-                   gap: 2rem;
-                align-items: center;
-                //    background-color: bisque;
-                  fieldset{
-                  
-                    color:#515151;
-                   border:.2rem solid #EBEBEB;
-                   width:31rem;
-                //    height: 1.5em;
-                    display: block;
-                    padding: 1.1rem;
-                    legend{
-                        // position: relative;
-                        // left: 1rem;
-                    }
-                   
-                   input {
-                    border: none;
-                    background: none;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    outline: none;
-                    // padding: ;
-                   
 
-                   }
-                  }
-                  
-                    }
-                    .input-secondsection{
-                   width: 50%;
+                .sections {
+                    // background-color: greenyellow; 
+                    width: 71.4rem;
+                    height: 39rem;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+
+                    // height: 48.9rem; 
+                    .section1 {
+                        width: 71.4rem;
+                        // height: 22.8rem;
                         display: flex;
-                        flex-direction: column;
-                        gap: 2rem;
+                        justify-content: center;
                         align-items: center;
-                        fieldset {
-                        
-                                color: #515151;
-                                border: .2rem solid #EBEBEB;
-                                width: 31rem;
-                                //    height: 1.5em;
-                                display: block;
-                                padding: 1.1rem;
-                        
-                                legend {
-                                    // position: relative;
-                                    // left: 1rem;
-                                }
-                        
-                                input {
-                                    border: none;
-                                    background: none;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    outline: none;
-                                    // padding: ;
-                        
-                        
-                                }
-                        
-                    }
-                }
+// background-color: blue;
+                        .companydetails-body {
+                            width: 71.4rem;
+                            height:24.8rem;
+                            // background-color: rosybrown; 
+                            border-bottom: .1rem solid #EBEBEB;
 
-               }
-               }
-               }}
+                            .companyaddress {
+                                display: flex;
+                                    align-items: flex-end;
+                                    width: 71.4rem;
+                                    height: 3.6rem;
+                                    // background-color: aqua; 
+                                    font-size: 1.5rem;
+                                    font-weight: 500;
+                                
+                                    p {
+                                        position: relative;
+                                        left: 1.6rem;
+                                    }
+                               
+                            }
+                                                         .selleraddress {
+                                                             display: flex;
+                                                             align-items: flex-end;
+                                                             width: 71.4rem;
+                                                             height: 3.6rem;
+                                                             // background-color: aqua; 
+                                                             font-size: 1.5rem;
+                                                             font-weight: 500;
+                            
+                                                             p {
+                                                                 position: relative;
+                                                                 left: 1.6rem;
+                                                             }
+                                                         }
+
+                            .input {
+                                width:71.4rem;
+                                height: 21.2rem;
+                                display: flex;
+                                
+                                    ::placeholder {
+                                        color: #A7A7A7;
+                                        position: relative;
+                                        left: 1rem;
+                                        font-size: 1.2rem;
+                                    }
+                                
+                                    .input-firstsection {
+                                // background-color: greenyellow;
+                                        width: 50%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 2.2rem;
+                                        align-items: center;
+                                        //    background-color: bisque; 
+                                
+                                        .fieldset {
+                                            position: relative;
+                                            color: #515151;
+                                            border: .1rem solid #EBEBEB;
+                                            width: 30rem;
+                                            // display: block; 
+                                            padding: 1.37rem;
+                                            border-radius: .4rem;
+                              
+                                            .legend {
+                                                // color: red; 
+                                                position: absolute;
+                                                bottom: 3.6rem;
+                                                left:2.5rem;
+                                                background-color: white;
+                                                font-size: 1.16rem;
+                                                font-weight: 600;
+                                                height: 1.6rem;
+                                                // left: 20rem; 
+                                            }
+                                            .con-inp{
+                                                position: relative;
+                                                padding: 0 0 0 3rem;
+                                            }
+                                            img{
+                                                position:absolute;
+                                                top: 0.2rem;
+                                                left: 2.5rem;
+                                            }
+                                
+                                            input {
+                                                border: none;
+                                                background: none;
+                                                // display: flex; 
+                                                // align-items: center; 
+                                                // justify-content: center; 
+                                                outline: none;
+                                                font-size: 1.3rem;
+                                                // padding: ; 
+                                
+                                
+                                            }
+                                        }
+                                
+                                    }
+                                                                          #fieldset1 {
+                                                                              margin-top: 1.5rem;
+                                                                          }
+                                
+                                    .input-secondsection {
+                            // background-color: greenyellow;
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2.2rem;
+                                align-items: center;
+                                //    background-color: bisque; 
+                            
+                                .fieldset {
+                                    position: relative;
+                                    color: #515151;
+                                    border: .1rem solid #EBEBEB;
+                                    width: 30.3rem;
+                                    // display: block; 
+                                    padding: 1.37rem;
+                                    border-radius: .4rem;
+                            
+                                    .legend {
+                                        // color: red; 
+                                        position: absolute;
+                                        bottom: 3.6rem;
+                                        left: 2.5rem;
+                                            background-color: white;
+                                            font-size: 1.16rem;
+                                            font-weight: 600;
+                                        font-size: 1.1rem;
+                                        height: 1.6rem;
+                                        // left: 20rem; 
+                                    }
+                            
+                                    input {
+                                        border: none;
+                                        background: none;
+                                        // display: flex; 
+                                        // align-items: center; 
+                                        // justify-content: center; 
+                                        outline: none;
+                                        font-size: 1.3rem;
+                                        // padding: ; 
+                            
+                            
+                                    }
+                                }}
+                                                                 #fieldset1 {
+                                                                     margin-top: 1.5rem;
+                                                                 }
+                                
+                                }
+                                }
+                                }
+                                }
+                                
                                 .sections::-webkit-scrollbar {
                                     display: none;
                                 }
-               .buttons{
-                height: 8.3rem;
-                width: 75.2rem;
-                background-color: grey;
-               }
-            }
-        }
-    }
-}
+                                
+                                .buttons {
+                                    height: 8.3rem;
+                                    width: 75.2rem;
+                                    // background-color: grey; 
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 39.5rem;
+                                
+                                    .button1 {
+                                        color: #515151;
+                                        background-color: #EBEBEB;
+                                        width: 10rem;
+                                        height: 4rem;
+                                        border: none;
+                                        font-size: 1.3rem;
+                                        font-weight: 600;
+                                        border-radius: .4rem;
+                                        position: relative;
+                                        right: 4rem;
+                                
+                                    }
+                                
+                                    .button2 {
+                                        color: white;
+                                        background-color: #00B197;
+                                        width: 14.5rem;
+                                        height: 4rem;
+                                        border: none;
+                                        font-size: 1.3rem;
+                                        font-weight: 600;
+                                        border-radius: .4rem;
+                                    }
+                                }
+                                }
+                            }
+                        }
+                    }
