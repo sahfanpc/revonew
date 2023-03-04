@@ -241,7 +241,7 @@
         padding: 0 2rem;
         .search {
           display: flex;
-          justify-content: space-between;
+          // justify-content: space-between;
           align-items: center;
           gap: 1.8rem;
 
@@ -249,6 +249,11 @@
             font-size: 1.6rem;
             font-weight: 500;
             color: #000000;
+            margin: 0;
+            // padding: 5rem 0;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
           }
           .input-container {
             display: -ms-flexbox;
@@ -306,11 +311,12 @@
             // display: flex;
             // justify-content: center;
             // align-items: center;
-            padding: 1rem 1rem 0.7rem;
+            padding: .8rem ;
             background-color: #ffffff;
             border: 1px solid #ebebeb;
             border-radius: 0.5rem;
             .dashboard-icon {
+              
             }
           }
           .squire-icon {
@@ -338,22 +344,38 @@
             background-color: #ffffff;
             border: 0.1rem solid #ebebeb;
             border-radius: 0.5rem;
+            padding: 0;
+            
             .icon {
+              margin-top: .4rem;
+              transform: rotate(0deg);
+              transition: 0.2s;
+              // margin: 0;
+
               .material-symbols-outlined {
                 color: #515151;
                 font-size: 2.5rem;
+                
               }
-              :hover.material-symbols-outlined {
-                transition: 0.4s;
-                transform: rotatey(180deg);
-                -webkit-transform: rotatey(180deg);
-                -ms-transform: rotatey(180deg);
-                color: #24c8c9;
-              }
+              
             }
-            h6 {
+            .filter-text {
+             
+              // padding: 0;
+              margin-top: .7rem;
+              // margin: 0;
               font-size: 1.6rem;
               color: #515151;
+              
+            }
+          }
+          .filter:hover .icon {
+            transition: 0.2s;
+            transform: rotatey(180deg);
+            -webkit-transform: rotatey(180deg);
+            -ms-transform: rotatey(180deg);
+            .material-symbols-outlined{
+            color: #24c8c9;
             }
           }
         }
@@ -404,6 +426,7 @@
               .main {
                 // display: none;
                 // bottom: 4.7rem;
+                background-color: white;
                 left: 20rem;
                 font-family: "Montserrat", sans-serif !important;
                 width: 21rem;
@@ -418,7 +441,7 @@
                   width: 21rem;
                   height: 22.6rem;
 
-                  background-color: white;
+                  // background-color: white;
                   .body-top {
                     width: 100%;
                     height: 70%;
@@ -429,7 +452,7 @@
                     align-items: center;
                     padding: 2rem;
                     flex-direction: column;
-                    gap: 1.5rem;
+                    // gap: 1.5rem;
                     border-bottom: 0.1rem solid #ebebeb;
                     // padding: 1rem;
                     // background-color: green;
@@ -470,8 +493,8 @@
                     }
                     .round {
                       position: absolute;
-                      top: 4.7rem;
-                      right: 7.8rem;
+                      top: 5.5rem;
+                      right: 6.9rem;
                       width: 1.3rem;
                       height: 1.3rem;
                       border-radius: 50%;
@@ -482,34 +505,41 @@
                     width: 100%;
                     height: 30%;
                     padding: 1rem 2rem;
+                    list-style: none;
                     //   background-color: green;
                     display: flex;
-                    justify-content: center;
+                    // justify-content: center;
                     align-items: flex-start;
                     flex-direction: column;
-                    gap: 1rem;
+                    gap: .5rem;
                     #call {
                       font-size: 1.7rem;
                       color: #24c8c9;
+                    
                     }
                     #chat {
                       font-size: 1.7rem;
                       color: #48bc14;
+
                     }
                     .phone {
+                      text-decoration: none;
                       display: flex;
-                      justify-content: center;
-                      align-items: center;
+                      // justify-content: center;
+                      // align-items: center;
                       font-size: 1rem;
                       gap: 1rem;
+                      color: #000000;
                       p {
                         font-size: 1.2rem;
                       }
                     }
                     .email {
+                      color: #000000;
+                      text-decoration: none;
                       display: flex;
-                      justify-content: center;
-                      align-items: center;
+                      // justify-content: center;
+                      // align-items: center;
                       gap: 1rem;
                       font-size: 1rem;
                       p {
@@ -527,7 +557,10 @@
             .image {
               border-top-right-radius: 1rem;
               border-top-left-radius: 1rem;
+             
             }
+            
+            
 
             // .image:hover .image-center-design + .icon-image {
             //   // transition: 0.3s;
@@ -548,7 +581,12 @@
               color: #ffffff;
               position: absolute;
               top: 2.1rem;
+              img{
+                transition: .3s;
+                transform: rotatey(0deg);
+              }
             }
+            
             .sales-card:hover img {
               transition: 0.3s;
               transform: rotatey(180deg);
@@ -565,11 +603,24 @@
               gap: 1.4rem;
 
               .unpublished-text {
+                // margin: 0;
                 color: #ffffff;
                 font-size: 1.7rem;
               }
-              .icon-image {
-              }
+             
+             
+            }
+            .icon-image {
+              transform: rotatey(0deg);
+              transition: 0.2s;
+            //   transition: 0.1s;
+            // transform: rotatey(0deg);
+            }
+            &:hover .icon-image {
+              transition: 0.3s;
+              transform: rotatey(180deg);
+              // -webkit-transform: rotatey(180deg);
+              // -ms-transform: rotatey(180deg);
             }
           }
 
@@ -621,13 +672,27 @@
                   position: absolute;
                   left: 27.8rem;
                   bottom: 11rem;
+                  width: 3.5rem;
+                  height: 3.5rem;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  background-color: #f1f1f1;
                   .material-icons-outlined {
                     border-radius: 50%;
                     color: #a7a7a7;
-                    padding: 1rem;
+                    // padding: 1rem;
                     font-size: 1.7rem;
-                    background-color: #f1f1f1;
+                    transition: 0.2s;
+                  transform: rotatey(0deg);
+                  
                   }
+                &:hover .material-icons-outlined{
+                  transition: 0.2s;
+                  transform: rotatey(180deg);
+                
+                }
                 }
               }
               .footer1 {
@@ -779,12 +844,7 @@
             }
             border: none;
           }
-          .parrent-image:hover .icon-image {
-            transition: 0.3s;
-            transform: rotatey(180deg);
-            -webkit-transform: rotatey(180deg);
-            -ms-transform: rotatey(180deg);
-          }
+          
         }
       }
 
